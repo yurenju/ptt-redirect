@@ -1,0 +1,10 @@
+{
+  "appName": {
+    "message": "ptt redirect",
+    "description": "The name of the application"
+  },
+  "appDescription": {
+    "message": "redirect url from other sites from ptt.cc",
+    "description": "The description of the application"
+  }
+}
