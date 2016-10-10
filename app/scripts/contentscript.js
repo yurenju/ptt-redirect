@@ -10,3 +10,9 @@ if (elements.length) {
     window.location.href = matched[1];
   }
 }
+if (window.location.hostname == "webptt.com") {
+  var search = window.location.search.split("n=");
+  if (search.length > 1) {
+    window.location.href = "https://www.ptt.cc/" + search[1];
+  }
+}
