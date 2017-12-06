@@ -17,7 +17,8 @@
   "content_scripts": [
     {
       "matches": [
-        "http://disp.cc/*"
+        "http://disp.cc/*",
+        "https://webptt.com/*"
       ],
       "js": [
         "scripts/contentscript.js"
