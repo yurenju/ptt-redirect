@@ -20,5 +20,8 @@ if (window.location.hostname == "webptt.com") {
 }
 
 if (window.location.hostname == "moptt.tw") {
-  window.location.href = window.location.pathname.replace(/\/p\/([^\.]+)\.(.*)/, "https://www.ptt.cc/bbs/$1/$2.html");
+  let regexp = /\/p\/([^\.]+)\.(.*)/;
+  if (regexp.test(window.location.pathname)) {
+    window.location.href = window.location.pathname.replace(regexp, "https://www.ptt.cc/bbs/$1/$2.html");
+  }
 }
