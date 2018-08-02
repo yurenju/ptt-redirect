@@ -19,7 +19,8 @@
       "matches": [
         "http://disp.cc/*",
         "https://disp.cc/*",
-        "https://webptt.com/*"
+        "https://webptt.com/*",
+        "https://moptt.tw/*"
       ],
       "js": [
         "scripts/contentscript.js"
