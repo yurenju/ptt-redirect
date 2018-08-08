@@ -17,10 +17,29 @@
   "content_scripts": [
     {
       "matches": [
-        "http://disp.cc/*",
-        "https://disp.cc/*",
-        "https://webptt.com/*",
-        "https://moptt.tw/*"
+        "*://94ptt.com/*",
+        "*://btrend.amassly.com/*",
+        "*://disp.cc/*",
+        "*://moptt.tw/*",
+        "*://ptt.av01.online/*",
+        "*://ptt.jimpop.org/*",
+        "*://ptt.social/*",
+        "*://ptt.techroomage.com/*",
+        "*://pttent.com/*",
+        "*://pttgame.com/*",
+        "*://pttgossip.com/*",
+        "*://ptthito.com/*",
+        "*://pttlocal.com/*",
+        "*://pttman.com/*",
+        "*://pttread.com/*",
+        "*://pttsport.com/*",
+        "*://pttweb.tw/*",
+        "*://sexptt.tk/*",
+        "*://webptt.com/*",
+        "*://webptt.xyz/*",
+        "*://www.laiptt.online/*",
+        "*://www.pttdata.com/*",
+        "*://www.ucptt.com/*"
       ],
       "js": [
         "scripts/contentscript.js"
