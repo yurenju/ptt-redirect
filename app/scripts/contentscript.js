@@ -6,7 +6,7 @@ if (elements.length) {
   var line = Array.prototype.filter.call(elements, function (record) {
     return record.textContent.indexOf('文章網址') !== -1;
   })[0].textContent;
-  var matched = line.match(/(https*:\/\/[\w\.\/]+)/);
+  var matched = line.match(/(https*:\/\/[\w\.\/-]+)/);
   if (matched) {
     window.location.href = matched[1];
   }
@@ -20,7 +20,7 @@ if (window.location.hostname == "webptt.com") {
 }
 
 if (window.location.hostname == "moptt.tw") {
-  let regexp = /\/p\/([^\.]+)\.(.*)/;
+  let regexp = /\/p\/([^\.]+)\.(.+)/;
   if (regexp.test(window.location.pathname)) {
     window.location.href = window.location.pathname.replace(regexp, "https://www.ptt.cc/bbs/$1/$2.html");
   }
